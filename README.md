@@ -22,3 +22,10 @@ rmarkdown::render_site()
 ```
 
 But please feel free to disregard all Rmarkdown stuff here and just go with whatever HTML building tools you want to render the splash page, as long as the links are correct to the Shiny app (a la `http://{root}/?nav=Projects`).
+
+#SCSS Development
+1. Open Terminal/Shell
+2. Navigate to /scss
+3. Run `npm install`
+4. After complete, run `gulp`
+5. This will run and generate a new styles.css in the root.
