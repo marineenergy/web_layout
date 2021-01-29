@@ -1,0 +1,90 @@
+/*
+COLORS
+------------------------------------------*/
+$color-white:         #ffffff;
+$color-blue:          #0b56a6;
+$color-navy:          #08274d;
+$color-sky:           #56b2e5;
+$color-lblue:         #45d0f6;
+$color-dgray:         #333333;
+$color-lgray:         #f6f6f6;
+
+$color-primary:       $color-blue;
+$color-secondary:     $color-navy;
+
+/*
+FONTS
+------------------------------------------*/
+$font-acumin:         acumin-pro, sans-serif;
+
+$font-primary:        $font-acumin;
+$font-secondary:      $font-acumin;
+
+
+/*
+Acumin Pro Bold
+font-family: acumin-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Acumin Pro Bold Italic
+font-family: acumin-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Acumin Pro Italic
+font-family: acumin-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Acumin Pro Medium
+font-family: acumin-pro, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Acumin Pro Regular
+font-family: acumin-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Acumin Pro Semibold
+font-family: acumin-pro, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Acumin Pro SemiCondensed Bold
+font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Acumin Pro SemiCondensed Bold Italic
+font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Acumin Pro SemiCondensed Regular
+font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Acumin Pro SemiCondensed Italic
+font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 400;
+font-style: italic;
+*/
+
+
+/*
+BOOTSTRAP VARIABLES
+------------------------------------------*/
+$primary:             $color-blue !default;
+$secondary:           $color-sky !default;
+
+$border-radius:       2px !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 1170px
+) !default;
+
+$font-family-sans-serif: $font-acumin;
