@@ -1,45 +1,45 @@
 name: "mhk-env"
-navbar:
-  title: "MHK-env"
-  type: inverse # inverse or default
-  left:
-    - text: "Projects"
-      href: http://127.0.0.1:1234/?nav=Projects
-    - text: "Regulations"
-      menu:
-        - text: "Regulations"
-          href: http://127.0.0.1:1234/?nav=Regulations
-        - text: "ACOE Process"
-          href: http://127.0.0.1:1234/?nav=Regulations
-        - text: "FERC Process"
-          href: http://127.0.0.1:1234/?nav=Regulations
-        - text: "State Process"
-          href: http://127.0.0.1:1234/?nav=Regulations
-    - text: "Interactions"
-      href: http://127.0.0.1:1234/?nav=Interactions
-    - text: "Configure"
-      href: http://127.0.0.1:1234/?nav=Configure
-    - text: "Management"
-      href: http://127.0.0.1:1234/?nav=Management
-    - text: "Literature"
-      href: http://127.0.0.1:1234/?nav=Literature
-    - text: "Spatial"
-      href: http://127.0.0.1:1234/?nav=Spatial
-    - text: "Reports"
-      href: http://127.0.0.1:1234/?nav=Reports
-  right:
-    - text: "About"
-      icon: fa-group
-      href: about.html
-    - text: "Help"
-      icon: fa-question
-      href: help.html
+# navbar:
+#   title: "MHK-env"
+#   type: inverse # inverse or default
+#   left:
+#     - text: "Projects"
+#       href: http://127.0.0.1:1234/?nav=Projects
+#     - text: "Regulations"
+#       menu:
+#         - text: "Regulations"
+#           href: http://127.0.0.1:1234/?nav=Regulations
+#         - text: "ACOE Process"
+#           href: http://127.0.0.1:1234/?nav=Regulations
+#         - text: "FERC Process"
+#           href: http://127.0.0.1:1234/?nav=Regulations
+#         - text: "State Process"
+#           href: http://127.0.0.1:1234/?nav=Regulations
+#     - text: "Interactions"
+#       href: http://127.0.0.1:1234/?nav=Interactions
+#     - text: "Configure"
+#       href: http://127.0.0.1:1234/?nav=Configure
+#     - text: "Management"
+#       href: http://127.0.0.1:1234/?nav=Management
+#     - text: "Literature"
+#       href: http://127.0.0.1:1234/?nav=Literature
+#     - text: "Spatial"
+#       href: http://127.0.0.1:1234/?nav=Spatial
+#     - text: "Reports"
+#       href: http://127.0.0.1:1234/?nav=Reports
+#   right:
+#     - text: "About"
+#       icon: fa-group
+#       href: about.html
+#     - text: "Help"
+#       icon: fa-question
+#       href: help.html
 output:
   html_document:
-    theme: yeti # flatly # journal # darkly # cosmo # yeti # lumen # darkly # https://bootswatch.com/
-    css: libs/styles.css
+    # theme: yeti # flatly # journal # darkly # cosmo # yeti # lumen # darkly # https://bootswatch.com/
+    css: styles.css
     mathjax: null    
     include:
-#      before_body: libs/banner.html
+      before_body: libs/header.html
       after_body: "libs/footer.html"
 output_dir: "."      

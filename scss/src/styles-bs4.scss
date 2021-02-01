@@ -2,7 +2,7 @@
 @import 'core/mixin';
 @import 'core/reset';
 
-//@import 'vendors/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap';
+@import 'node_modules/bootstrap-scss/bootstrap';
 @import 'vendors/bootstrap-overrides';
 
 @import 'components/header';

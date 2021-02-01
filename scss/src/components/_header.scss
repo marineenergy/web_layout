@@ -1,7 +1,5 @@
-$maxWidth: 992px;
-$minWidth: 993px;
 header{
-  @media (max-width: $maxWidth) {
+  @media (max-width: $mediumBreakWidth) {
     position: fixed;
     position: sticky;
     top: 0px;
@@ -10,10 +8,20 @@ header{
   .navbar{
     background-color: $color-white;
     height: 102px;
-    @media (max-width: $maxWidth) {
+    margin: 0;
+    border-radius: 0;
+    @media (max-width: $mediumBreakWidth) {
       background-color: $color-navy;
-      padding: 15px 0px;
+      // padding: 15px 0px;
       height: 65px;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      height: 102px;
+      @media (max-width: $mediumBreakWidth) {
+        height: 65px;
+      }
     }
     .navbar-toggler{
       position: absolute;
@@ -21,6 +29,11 @@ header{
       left: 12px;
       border: none;
       padding: 0px;
+      display: none;
+      background-color: transparent;
+      @media (max-width: $mediumBreakWidth) {
+        display: block;
+      }
       .navbar-toggler-icon{
         img{
           max-width: 20px;
@@ -29,15 +42,16 @@ header{
     }
     .navbar-brand{
       max-width: 150px;
-      @media (max-width: $maxWidth) {
+      @media (max-width: $mediumBreakWidth) {
         max-width: none;
-        margin: auto;
+        margin: auto !important;
+        display: block;
       }
       img{
         max-width: 100%;
         &.default{
           display: block;
-          @media (max-width: $maxWidth) {
+          @media (max-width: $mediumBreakWidth) {
             display: none;
           }
         }
@@ -45,7 +59,7 @@ header{
           display: none;
           width: 190px;
           margin: auto;
-          @media (max-width: $maxWidth) {
+          @media (max-width: $mediumBreakWidth) {
             display: block;
           }
         }
@@ -54,10 +68,10 @@ header{
     .navbar-nav{
       > li{
         padding: 0px 10px 0px 0px;
-        @media (max-width: $maxWidth) {
+        @media (max-width: $mediumBreakWidth) {
           padding: 0;
         }
-        @media (min-width: $minWidth) {
+        @media (min-width: ($mediumBreakWidth - 1px)) {
           &:not(:last-child):after{
             content: '\25A0';
             padding: 0 0 0 10px;
@@ -76,11 +90,14 @@ header{
           }
           text-transform: uppercase;
           color: $color-navy;
+          padding: 0px !important;
+          display: inline-block;
           &:hover{
             color: $color-sky;
             text-decoration: none;
+            background-color: transparent;
           }
-          @media (max-width: $maxWidth) {
+          @media (max-width: $mediumBreakWidth) {
             font:{
               size: 12px;
               weight: 500;
@@ -116,7 +133,7 @@ header{
     }
     .navbar-collapse{
       background-color: $color-white;
-      @media (max-width: $maxWidth) {
+      @media (max-width: $mediumBreakWidth) {
         border-bottom: solid 1px $color-lgray;
         position: fixed;
         top: 65px;
